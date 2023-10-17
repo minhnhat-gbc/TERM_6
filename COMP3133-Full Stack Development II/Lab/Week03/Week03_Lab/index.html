@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Client</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io("http://localhost:8088")
+
+        socket.on("welcome", (data) => {
+            console.log(data);
+        })
+        socket.emit("hello", "Hello World")
+
+        socket.on("notice", (data) => {
+            console.log(data)
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to Socket.io example</h1>
+</body>
+
+</html>

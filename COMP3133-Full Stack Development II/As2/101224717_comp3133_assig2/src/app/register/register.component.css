@@ -1,0 +1,24 @@
+.mat_header h1{
+    width: 100%;
+    text-align: center;
+}
+
+.example-form {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+button{
+    border-radius: 50px;
+}
+
+a{
+    margin-left: 10px;
+    border-radius: 40px;
+}
+

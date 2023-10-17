@@ -1,0 +1,23 @@
+{
+  "name": "101224717_lab_test01_chat_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.9.1",
+    "socket.io": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+
+<body>
+    <div class="join-container">
+        <header class="join-header">
+            <h1 style="font-family: 'Roboto', sans-serif; font-size: 28px;"><i class="fas fa-smile"></i>SIGN UP</h1>
+        </header>
+        <form action="/login" method="post">
+            {{#each errors}}
+            <div style="color: orange">
+                <a href="#" data-dismiss="alert" aria-label="close"></a>
+                {{text}}
+            </div>
+            {{/each}}
+            <div class="container_name">
+                <input type="text" name="fn" placeholder="First Name" value="{{First_Name}}" required><br>
+                <input type="text" name="ln" placeholder="Last Name" value="{{Last_Name}}" required><br>
+            </div>
+            <input type="text" name="username" placeholder="Username" value="{{Username}}" required><br>
+            <input type="password" name="password" placeholder="Password" value="{{Password}}" required>
+            <div>
+                <input type="submit" class="btn">
+            </div>
+            <h4 style="padding-bottom: 5px;">Come back Login</h4>
+            <a href="/" style="color: aliceblue; text-decoration: none;">Login</a>
+        </form>
+        {{!-- <div class="signup">
+            <a href="/">Login</a>
+        </div> --}}
+    </div>
+</body>
+
+</html>

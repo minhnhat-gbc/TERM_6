@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-header class="header">
+        <h1>SpaceX Mission Launch List</h1>
+        <a routerLink="/filter" mat-raised-button color="warn">Filter</a>
+
+    </mat-card-header>
+    <ul class="container">
+        <li *ngFor="let mission of listMission" class="content">
+            <a routerLink="/{{mission.flight_number}}" style="cursor: pointer;">
+                <div class="above_content">
+                    <div class="small_image">
+                        <img src="{{mission.links.mission_patch_small}}" alt="{{mission.rocket.rocket_name}}"
+                            width="50px" height="50px">
+                    </div>
+                    <div class="small_detail">
+                        <h2>
+                            {{mission.mission_name}}
+                        </h2>
+                        <p>{{mission.launch_year}}</p>
+                    </div>
+                </div>
+                <div class="under_content">{{mission.details}}</div>
+            </a>
+        </li>
+    </ul>
+</mat-card>

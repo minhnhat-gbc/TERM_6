@@ -1,0 +1,19 @@
+{
+  "name": "week04_lab03_exer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lab03_restaurant_database.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

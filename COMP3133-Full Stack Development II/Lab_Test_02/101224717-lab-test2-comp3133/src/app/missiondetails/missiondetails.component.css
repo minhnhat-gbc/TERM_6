@@ -1,0 +1,49 @@
+mat-card{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.body{
+    background-color: #FFFAF0;
+}
+
+.header{
+    display: flex; 
+    justify-content: space-between;
+    
+    
+}
+
+.header a{
+    margin-top: -3px;
+}
+
+.above_content{
+    display: flex;
+}
+.image{
+    padding: 2rem;
+}
+.mission_info{
+    margin-top: 2rem;
+}
+.under_content{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.under_content h1{
+    color: #DC143C;
+}
+
+.above_content h2{
+    color: #DC143C;
+}
+
+.launch_detail{
+    margin-bottom: 1rem;
+}
+
+mat-icon{
+    margin-left: 1rem;
+}

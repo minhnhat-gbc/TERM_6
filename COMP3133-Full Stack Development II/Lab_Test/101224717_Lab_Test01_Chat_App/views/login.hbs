@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/signIn.css">
+</head>
+
+<body>
+    <div class="join-container">
+        <header class="join-header">
+            <h1 style="font-family: 'Roboto', sans-serif; font-size: 28px;"><i class="fas fa-smile"></i> LOGIN</h1>
+        </header>
+        <form action="/homeChat" method="post">
+            {{#each success}}
+            <p style="color: greenyellow;"> {{text}}</p>
+            {{/each}}
+            {{#each errors}}
+            <p style="color: orange;"> {{text}}</p>
+            {{/each}}
+            <input type="text" name="username" placeholder="Username" required>
+            <br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <input class="btn" type="submit">
+            <h4 style="padding-bottom: 5px;">Dont have an account ?</h4>
+            <a href="/signup" style="color: aliceblue; text-decoration: none;">Registor</a>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "week02_lab01_exer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Lab01_101224717_COMP3133.js",
+  "scripts": {
+    "start": "nodemon Lab01_101224717_COMP3133.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "csv-stringify": "^6.2.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
